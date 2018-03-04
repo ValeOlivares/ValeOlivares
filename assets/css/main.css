@@ -1,34 +1,41 @@
 body {
   margin: 0 auto;
+  font-family: 'Roboto Condensed', sans-serif;
+
 }
 li {
   list-style: none;
 }
 
+/* ---- meP section---- */
+
+.profileImage {
+  width: 30vw;
+  border-radius: 50%;
+}
+
+.meParragraph {
+  margin-left: 1vw;
+}
+
 .sidenav {
   height: 100vh;
-  min-width: 5vw;
+  min-width: 7vw;
   position: fixed;
   z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
+  background-color: rgba(0, 0, 0, 0.5);
   overflow-x: hidden;
-  padding-top: 20px;
+  padding-top: 20vh;
+
+
 }
 
 .icon {
-  padding: 6px 8px 6px 16px;
+  padding: 1em;
   text-decoration: none;
   color: #eb8b8f;
-  display: block;
-  font-size: 2vw;
+ 
 }
-
-.sidenav_icons {
-  text-align: center;
-}
-
 
 /* ---- particle.js ---- */
 canvas {
@@ -48,8 +55,8 @@ canvas {
   background-color: transparent;
   position: absolute;
   top: 48px;
-  left: 0;
-  width: 100vw;
+  width: 95vw;
+  
   color: #fff;
 }
 .js-count-particles {
@@ -73,7 +80,7 @@ canvas {
 /* ----  svg animation---- */
 svg {
   width: 30vh;
-  margin-left: 50vw;
+  margin-left: 80vw;
   
 }
 path {
@@ -292,5 +299,46 @@ figure.effect-hera:hover p i:empty {
   -webkit-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0); /* just because it's stronger than nth-child */
   opacity: 1;
+}
+
+/* Icon Pulse */
+@-webkit-keyframes hvr-icon-pulse {
+  25% {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+  }
+  75% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+}
+@keyframes hvr-icon-pulse {
+  25% {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+  }
+  75% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+
+}
+.hvr-icon-pulse:before {
+  content: "\f015";
+  position: absolute;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-icon-pulse:hover:before, .hvr-icon-pulse:focus:before, .hvr-icon-pulse:active:before {
+  -webkit-animation-name: hvr-icon-pulse;
+  animation-name: hvr-icon-pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
 }
 
