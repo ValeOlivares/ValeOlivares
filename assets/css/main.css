@@ -15,6 +15,8 @@ li {
 .contactInfoCV {
   margin-top: 2em;
 }
+
+
 /* ---- meP section---- */
 
 .profileImage {
@@ -542,3 +544,4 @@ figure.effect-hera:hover p i:empty {
   color:#fff;
   left:0!important;
   top: 1px!important;
+}
