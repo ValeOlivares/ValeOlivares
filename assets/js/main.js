@@ -6,6 +6,7 @@ $(document).ready(function(){
     $("#work2P").hide();
     $("#work3P").hide();
     $("#work4P").hide();
+    $("#work5P").hide();
 
 	$("#home").click(function(){
 		$("#homeP").show(1000);
@@ -52,6 +53,8 @@ $(document).ready(function(){
         $("#work2P").hide();
         $("#work3P").hide();
         $("#work4P").hide();
+        $("#work5P").hide();
+
     });
 
     $("#work2").click(function(){
@@ -59,6 +62,7 @@ $(document).ready(function(){
         $("#work1P").hide();
         $("#work3P").hide();
         $("#work4P").hide();
+        $("#work5P").hide();
     });
 
     $("#work3").click(function(){
@@ -66,14 +70,24 @@ $(document).ready(function(){
         $("#work1P").hide();
         $("#work2P").hide();
         $("#work4P").hide();
+        $("#work5P").hide();
     });
 
-        $("#work4").click(function(){
-            $("#work4P").show();
+    $("#work4").click(function(){
+        $("#work4P").show();
         $("#work1P").hide();
         $("#work2P").hide();
         $("#work3P").hide();
+        $("#work5P").hide();
     });
+     $("#work5").click(function(){
+        $("#work4P").hide();
+        $("#work1P").hide();
+        $("#work2P").hide();
+        $("#work3P").hide();
+        $("#work5P").show();
+    });
+
 
     // Wrap every letter in a span
     $('.ml12').each(function(){
