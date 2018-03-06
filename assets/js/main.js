@@ -130,29 +130,26 @@ $(document).ready(function(){
         e.preventDefault();
       });
 
-      $("#myCarousel").carousel();
-    
-    // Enable Carousel Indicators
-    $(".item1").click(function(){
-        $("#myCarousel").carousel(0);
-    });
-    $(".item2").click(function(){
-        $("#myCarousel").carousel(1);
-    });
-    $(".item3").click(function(){
-        $("#myCarousel").carousel(2);
-    });
-    $(".item4").click(function(){
-        $("#myCarousel").carousel(3);
-    });
-    
-    // Enable Carousel Controls
-    $(".left").click(function(){
-        $("#myCarousel").carousel("prev");
-    });
-    $(".right").click(function(){
-        $("#myCarousel").carousel("next");
-    });
+      // Formulario para enviar correos
+      $('#contact-form').submit(function(e){
+        var name = document.getElementById("inputName");
+        var email = document.getElementById("inputEmail");
+        var message = document.getElementById("inputMessage");
+
+        if (!name.value || !email.value || !message.value) {
+            alertify.error ("please check your entries");
+        } else {
+            $.ajax({
+              url: "https://formspree.io/valentinaolivares85@gmail.com", 
+              method: "POST",
+              data: $(this).serialize,
+              dataType: "json"
+            });
+            e.preventDefault()
+            $this.get(0).reset()
+            alertify.success("Message Sent")
+        }
+      });
 
 });
 
