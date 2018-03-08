@@ -2,30 +2,24 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title>Valentina N Olivares | Portafolio</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<link rel="stylesheet" href="assets/css/slick-theme.css">
-	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" href="assets/css/hover.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 	<link rel='shortcut icon' type='image/x-icon' href="assets/img/valicon.ico">
-
-	
 </head>
 <body>
-	
 	<section class="sidenav  align-items-center" >
 		<div class= "sidenav_icons ">
 			<li id="home"><i class="fa fa-home fa-2x icon hvr-icon-pulse"></i></li>
 			<li id="me" ><i class="fa fa-user fa-2x icon hvr-icon-pulse"></i></li>
-			<li id="skills" ><i class="fa fa-cog fa-2x icon hvr-icon-pulse"></i></li>
-  			<li id="contact" ><i class="fa fa-envelope-o fa-2x icon hvr-icon-pulse"></i></li>
-  			<li id="work" ><i class="fa fa-briefcase  fa-2x icon hvr-icon-pulse" ></i></li>
-
-  	</div>
+			<li id="skills" ><i class="fa fa-cog  fa-2x icon hvr-icon-pulse" ></i></li></div>
+  		<li id="contact" ><i class="fa fa-envelope-o fa-2x icon hvr-icon-pulse"></i></li>
+  		<li id="work" ><i class="fa fa-briefcase  fa-2x icon hvr-icon-pulse" ></i></li></div>
 	</section> 
 
 	<div id="particles-js"></div>
@@ -74,7 +68,25 @@
 			</div>
 		</div>
 
-		<div id="contactP">
+		<div id="skillsP">
+			<h2 class="ml12">Habilidades</h2>
+				
+			<div class="sIcons">
+				<i class="devicon-html5-plain-wordmark skillsIcon"></i>
+				<i class="devicon-javascript-plain skillsIcon"></i>
+				<i class="devicon-jquery-plain-wordmark skillsIcon"></i>
+				<i class="devicon-bootstrap-plain-wordmark skillsIcon"></i>
+				<i class="devicon-nodejs-plain skillsIcon"></i>
+				<i class="devicon-photoshop-plain skillsIcon"></i>
+				<i class="devicon-github-plain skillsIcon"></i>
+				<i class="devicon-git-plain skillsIcon"></i>
+			</div>
+
+
+			
+
+		</div>
+<div id="contactP">
 			<h2 class="ml12">Contact</h2>
 			<div class="row align-items-center justify-content-center">
 					<div class="col-5">
@@ -131,6 +143,7 @@
 										<form class="form-group contact-form" action="https://formspree.io/valentinaolivares85@gmail.com" method="POST">
 											<div class="">
 												<input id="textinput inputName" name="name" placeholder="Nombre" class="form-control input-md" type="text">
+												<input type="text" name="_gotcha" style="display:none" />
 												<input id="textinput inputEmail" name="mail" placeholder="Email" class="form-control input-md" type="email">
 												<input id="textinput inputMessage" name="comment" placeholder="Mensaje" class="form-control input-md" type="text">
 											</div>
@@ -149,98 +162,90 @@
 				</div>
 			</div>
 
-		<section id="skillsP">
-			<p>Aca van las skills</p>
-			<i class="devicon-html5-plain-wordmark"></i>
-			<i class="devicon-javascript-plain"></i>
-			<i class="devicon-jquery-plain-wordmark"></i>
-			<i class="devicon-bootstrap-plain-wordmark"></i>
-			<i class="devicon-nodejs-plain"></i>
-			<i class="devicon-photoshop-plain"></i>
+		<div id="workP">
+			<h2 class="ml12">Proyectos</h2>
+			
+			<div id="carouselExampleIndicators" class="carousel slide carouselImg" data-ride="carousel">
+				<ol class="carousel-indicators">
+    			<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    			<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    			<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  			</ol>
 
-		</section>
-		<section id="workP">
-			<h2 class="ml12">Projects</h2>
+  			<div class="carousel-inner" role="listbox">
+  				
+  				<div class="carousel-item active">
+  					<div>
 
-			<div class="row">
-				<div class="grid" id="work1P">
-					<figure class="effect-hera">
-						<img src="assets/img/foodmap.jpg" alt="img17" class="work" />
+
+	  					<figure class="effect-hera">
+							<img class="d-block img-fluid" src="assets/img/foodmap.jpg" alt="Second slide">
+							<figcaption>
+								<h2>Foodmap</h2>
+								<p>
+									<a href="https://github.com/ValeOlivares/hackathon-movie" target="_blank"><i class="fa fa-code"></i></a>
+								<a href="https://github.com/ValeOlivares/hackathon-movie" target="_blank">Código</a>
+								<a href="https://hackathon-movies.firebaseapp.com" target="_blank"><i class="fa fa-globe"></i></a>
+								<a href="https://hackathon-movies.firebaseapp.com" target="_blank">Web</a>
+								</p>
+							</figcaption>			
+							</figure>
+						</div>
+    			</div>
+
+    			<div class="carousel-item">
+    				<figure class="effect-hera">
+							<img class="d-block img-fluid" src="assets/img/Nominate.JPG" alt="Second slide">
 						<figcaption>
-							<h2>Foodmap</h2>
+							<h2>PROYECTO<span>Nominate</span></h2>
 							<p>
-								<a href="https://github.com/ValeOlivares/foodmap"><i class="fa fa-code"></i></a>
-								<a href="https://valeolivares.github.io/foodmap/"><i class="fa fa-globe"></i></a>
+								<a href="https://github.com/ValeOlivares/hackathon-movie" target="_blank"><i class="fa fa-code"></i></a>
+								<a href="https://github.com/ValeOlivares/hackathon-movie" target="_blank">Código</a>
+								<a href="https://hackathon-movies.firebaseapp.com" target="_blank"><i class="fa fa-globe"></i></a>
+								<a href="https://hackathon-movies.firebaseapp.com" target="_blank">Web</a>
 							</p>
 						</figcaption>			
 					</figure>
-				</div>
-				<div class="grid" id="work2P">
-					<figure class="effect-hera">
-						<img src="assets/img/instagram.jpg" alt="img17" class="work" />
+
+
+					</div>
+					<div class="carousel-item">
+    				<figure class="effect-hera">
+						<img class="d-block img-fluid" src="assets/img/twitter.jpg" alt="Second slide">
 						<figcaption>
-							<h2>Instagram</h2>
+							<h2>Twitter</h2>
 							<p>
-								<a href="https://github.com/ValeOlivares/insta-collage"><i class="fa fa-code"></i></a>
-								<a href="https://valeolivares.github.io/insta-collage/"><i class="fa fa-globe"></i></a>
+								<a href="https://github.com/ValeOlivares/hackathon-movie" target="_blank"><i class="fa fa-code"></i></a>
+								<a href="https://github.com/ValeOlivares/hackathon-movie" target="_blank">Código</a>
+								<a href="https://hackathon-movies.firebaseapp.com" target="_blank"><i class="fa fa-globe"></i></a>
+								<a href="https://hackathon-movies.firebaseapp.com" target="_blank">Web</a>
 							</p>
 						</figcaption>			
-					</figure>
-				</div>
-					<div class="grid" id="work3P">
-					<figure class="effect-hera">
-						<img src="assets/img/lyft.jpg" alt="img17" class="work" />
-						<figcaption>
-							<h2>Lyft</h2>
-							<p>
-								<a href="https://github.com/ValeOlivares/Lyft2"><i class="fa fa-code"></i></a>
-								<a href="https://valeolivares.github.io/Lyft2/https://valeolivares.github.io/Lyft2/"><i class="fa fa-globe"></i></a>
-							</p>
-						</figcaption>			
-					</figure>
-				</div>
-					<div class="grid" id="work4P">
-					<figure class="effect-hera">
-						<img src="assets/img/ruby.jpg" alt="img17" class="work" />
-						<figcaption>
-							<h2>Blog  Ruby  on  Rails</h2>
-							<p>
-								<a href="https://github.com/ValeOlivares/WanderlustCosmetica"><i class="fa fa-code"></i></a>
-								<a href="https://wanderlustcosmetica.herokuapp.com/"><i class="fa fa-globe"></i></a>
-							</p>
-						</figcaption>			
-					</figure>
-				</div>
-				<div class="grid" id="work5P">
-					<figure class="effect-hera">
-						<img src="assets/img/ruby.jpg" alt="img17" class="work" />
-						<figcaption>
-							<h2>Nominate</h2>
-							<p>
-								<a href="https://github.com/ValeOlivares/hackathon-movie"><i class="fa fa-code"></i></a>
-								<a href="https://hackathon-movies.firebaseapp.com"><i class="fa fa-globe"></i></a>
-							</p>
-						</figcaption>			
-					</figure>
-				</div>
-			</div>
-				<div class="workList">
-					<li id="work1">1</li>
-					<li id="work2">2</li>
-					<li id="work3">3</li>
-					<li id="work4">4</li>
-					<li id="work5">5</li>
-				</div>
-			</section>
+						</figure>
+					</div>
+    		</div>
+
+    		<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    			<span class="sr-only">Previous</span>
+    		</a>
+    		<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+    			<span class="sr-only">Next</span>
+    		</a>
+    	</div>
+    </div>
+
+	
 
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-	<script src="assets/js/lib/slick.js"></script>
 	<script src="assets/js/lib/anime.js"></script>
 	<script src="assets/js/lib/particles.js"></script>
 	<script src="assets/js/lib/app.js"></script>
 	<script src="assets/js/main.js"></script>
+	
 
 </body>
 </html>
