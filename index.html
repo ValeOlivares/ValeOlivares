@@ -13,15 +13,36 @@
 	<link rel='shortcut icon' type='image/x-icon' href="assets/img/valicon.ico">
 </head>
 <body>
-	<section class="sidenav  align-items-center d-none d-sm-block" >
+  <!--Navbar lateral-->
+	<section class="sidenav  align-items-center d-none d-sm-block d-md-block" >
 		<div class= "sidenav_icons ">
 			<li id="home"><i class="fa fa-home fa-2x icon hvr-icon-pulse"></i></li>
 			<li id="me" ><i class="fa fa-user fa-2x icon hvr-icon-pulse"></i></li>
-			<li id="skills" ><i class="fa fa-cog  fa-2x icon hvr-icon-pulse" ></i></li></div>
+			<li id="skills" ><i class="fa fa-cog  fa-2x icon hvr-icon-pulse" ></i></li>
   		<li id="contact" ><i class="fa fa-envelope-o fa-2x icon hvr-icon-pulse"></i></li>
-  		<li id="work" ><i class="fa fa-briefcase  fa-2x icon hvr-icon-pulse" ></i></li></div>
-	</section> 
-
+      <li id="work" ><i class="fa fa-briefcase  fa-2x icon hvr-icon-pulse" ></i></li>
+    </div>
+  </section> 
+  <!-- Navbar superior para mobile-->
+  <section class="nav d-block d-sm-none">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="#">Vale</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              	<li id="home"><i class="fa fa-home fa-2x icon hvr-icon-pulse"></i></li>
+                <li id="me" ><i class="fa fa-user fa-2x icon hvr-icon-pulse"></i></li>
+                <li id="skills" ><i class="fa fa-cog  fa-2x icon hvr-icon-pulse" ></i></li>
+  		          <li id="contact" ><i class="fa fa-envelope-o fa-2x icon hvr-icon-pulse"></i></li>
+  		          <li id="work" ><i class="fa fa-briefcase  fa-2x icon hvr-icon-pulse" ></i></li>
+            </ul>
+          </div>
+        </nav>
+  </section>
+<!-- Navbar superior para mobile-->
 	<div id="particles-js"></div>
 	<div class="count-particles"><span class="js-count-particles"></span>
 		<div class="tabs" >
