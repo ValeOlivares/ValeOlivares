@@ -91,6 +91,10 @@ body {
   .cv {
     padding-top: 2em;
   }
+
+  .contactLink {
+    font-size: 1.5em;
+  }
   
   /* ---- particle.js ---- */
   canvas {
