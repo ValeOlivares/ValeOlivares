@@ -25,7 +25,7 @@ body {
   
   .skillsIcon {
     margin-top: 0.5em;
-    font-size: 5em;
+    font-size: 3em;
   }
   
   .sIcons{
@@ -54,11 +54,13 @@ body {
   
   .meParragraph {
     margin-left: 1vw;
+    font-size: 1.5em;
   }
   
   /* ---- sidenav section---- */
   .sidenav {
     height: 100vh;
+    max-width: 8vw;
     background-color: rgba(0, 0, 0, 0.5);
   }
   
@@ -67,6 +69,7 @@ body {
     padding: 1em;
     text-decoration: none;
     color: #eb8b8f;
+    cursor: pointer;
    
   }
   /* ----  contact section ---- */
@@ -125,9 +128,8 @@ body {
   /* ----  svg animation---- */
   svg {
     width: 30vh;
-    margin-left: 50vw;
-    
   }
+
   path {
     stroke: #fff;
     fill: #fff;
@@ -208,7 +210,7 @@ body {
     font-weight: 200;
     font-size: 2em;
     text-transform: uppercase;
-    letter-spacing: 0.5em;
+    letter-spacing: 1em;
   }
   
   .ml12 .letter {
