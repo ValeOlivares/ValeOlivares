@@ -12,6 +12,19 @@ li {
   height: 100vh;
 }
 
+
+.adjustContent{
+  padding-top: 5rem ;
+  padding-bottom: 5rem;
+  margin-left: 15rem;
+}
+
+.adjustContent{
+  min-width: none;
+}
+
+
+
   /* titles */
   .ml12 {
     font-weight: 200;

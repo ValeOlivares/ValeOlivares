@@ -52,4 +52,16 @@
       display: block;
     }
   }
-
+  @media (min-width: 768px) {
+    .adjustContent {
+      min-height: 100vh;
+      min-width: 18rem;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .adjustContent {
+      padding-top: 3rem !important;
+      padding-bottom: 3rem !important;
+    }
+  }
