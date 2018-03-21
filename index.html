@@ -9,8 +9,9 @@
     crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/main.css">
   <link rel="stylesheet" href="assets/css/hover.css">
+  <link rel="stylesheet" href="assets/css/media.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
   <link rel='shortcut icon' type='image/x-icon' href="assets/img/valicon.ico">
 </head>
@@ -22,44 +23,57 @@
   <!-- stats - count particles -->
   <div class="count-particles">
     <span class="js-count-particles"></span>
-    <div class="row main align-items-center justify-content-center">
-      <!-- Sidebar section -->
-      <div class="d-none d-sm-block col-md-2 col-lg-2 sidebar ">
-        <section class="sidenav  align-items-center d-none d-sm-block d-md-block mobileNav">
-          <div class="sidenav_icons">
-            <li id="home">
-              <i class="fa fa-home  fa-2x icon" data-toggle="tooltip" data-placement="left" title="Home"></i>
-            </li>
-            <li id="me">
-              <i class="fa fa-user fa-2x icon" data-toggle="tooltip" data-placement="left" title="Sobre mi"></i>
-            </li>
-            <li id="skills">
-              <i class="fa fa-cog  fa-2x icon" data-toggle="tooltip" data-placement="left" title="Habilidades"></i>
-            </li>
-            <li id="contact">
-              <i class="fa fa-envelope-o fa-2x icon" data-toggle="tooltip" data-placement="left" title="Contacto"></i>
-            </li>
-            <li id="work">
-              <i class="fa fa-briefcase  fa-2x icon" data-toggle="tooltip" data-placement="left" title="Trabajos"></i>
-            </li>
-          </div>
-        </section>
-      </div>
-      <div class="col-12 col-sm-12 col-md-10 col-lg-10 content">
-        <div class="tabs">
-          <!-- Home section -->
 
-          <div id="homeP">
-            <div class="row justify-content-center">
-              <div class="col-3">
-                <svg class="svg" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                  x="0px" y="0px" viewBox="0 0 595.3 841.9" style="enable-background:new 0 0 595.3 841.9;" xml:space="preserve">
-                  <style type="text/css">
-                    .st0 {
-                      fill: #fff;
-                    }
-                  </style>
-                  <path id="XMLID_4_" class="st0" d="M393.1,38.5c-3.4-1.5-7.3,0.1-8.7,3.4L210,444.1L39.7,52.2l68.3,0.4l95.5,221.7
+    <!-- Sidebar/Navbar section -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <span class="d-block d-lg-none">Vale Olivares</span>
+        <span class="d-none d-lg-block">
+          
+        </span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li id="home">
+            <i class="fa fa-home  fa-2x icon" data-toggle="tooltip" data-placement="bottom" title="Home"></i>
+          </li>
+          <li id="me">
+            <i class="fa fa-user fa-2x icon" data-toggle="tooltip" data-placement="bottom" title="Sobre mi"></i>
+          </li>
+          <li id="skills">
+            <i class="fa fa-cog  fa-2x icon" data-toggle="tooltip" data-placement="bottom" title="Habilidades"></i>
+          </li>
+          <li id="contact">
+            <i class="fa fa-envelope-o fa-2x icon" data-toggle="tooltip" data-placement="bottom" title="Contacto"></i>
+          </li>
+          <li id="work">
+            <i class="fa fa-briefcase  fa-2x icon" data-toggle="tooltip" data-placement="bottom" title="Trabajos"></i>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class=" content">
+      <div class="tabs">
+
+        <!-- Home section -->
+
+        <div id="homeP">
+          <div class="row justify-content-center">
+            <div class="col-3">
+              <svg class="svg" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px" y="0px" viewBox="0 0 595.3 841.9" style="enable-background:new 0 0 595.3 841.9;" xml:space="preserve">
+                <style type="text/css">
+                  .st0 {
+                    fill: #fff;
+                  }
+                </style>
+                <path id="XMLID_4_" class="st0" d="M393.1,38.5c-3.4-1.5-7.3,0.1-8.7,3.4L210,444.1L39.7,52.2l68.3,0.4l95.5,221.7
                 c1.1,2.5,3.5,4,6.1,4c0.9,0,1.8-0.2,2.6-0.5c1.9-0.8,3.2-2.4,3.7-4.2c0.6-0.8,1.1-1.6,1.3-2.6L283,116.9l29.8-69.5
                 c0.2-0.6,0.4-1.1,0.5-1.7c0.4-1.7,0.1-3.4-0.9-4.9c-1.2-1.9-3.3-2.8-5.5-2.8h-0.1c-0.7,0-1.4,0-2,0.2c-0.2,0.1-0.3,0.1-0.5,0.1
                 L252.3,39c-3.4-1.4-7.2,0.1-8.7,3.5l-33.6,78.9l-33.5-78.7c-1.4-3.4-5.3-4.9-8.7-3.5c-2.6,1.1-4.1,3.7-4,6.4c0,1,0.1,1.9,0.5,2.9
@@ -68,201 +82,171 @@
                 c2.3-0.7,4.1-2.7,4.6-5.1l36.9-86.4l42.2-0.6l-86.4,202L119.8,43.4c-0.2-0.5-0.5-0.9-0.8-1.3c-1.2-1.9-3.2-3.1-5.5-3.1l-83.9-1
                 c0,0,0,0,0,0c-2.2,0-4.3,1.5-5.5,3.4c-1.2,1.9-1.4,4.7-0.5,6.8l179.8,413.9c1.1,2.4,3.4,3.9,6.1,3.9h1.2c2.6,0,5-1.6,6.1-4
                 L396.5,47.2C398,43.9,396.4,40,393.1,38.5z" />
-                </svg>
-              </div>
-            </div>
-            <div class="row justify-content-center">
-              <div class="col-12 name">
-                <h1>Valentina N. Olivares</h1>
-              </div>
-            </div>
-            <div class="row justify-content-center">
-              <div class="col-12 name">
-                <h1 class="ml12">Frontend Developer</h1>
-              </div>
+              </svg>
             </div>
           </div>
-
-          <!-- About me section -->
-          <div id="meP">
-            <div class="row">
-              <div class="col-12">
-                <h2 class="ml12 title">Sobre mi</h2>
-              </div>
-            </div>
-            <div class="row align-items-center justify-content-center clearfix aboutMe">
-              <div class="col-12 col-sm-12 col-md-5 col-lg-5 meParragraph">
-                <p>Soy Desarrolladora Front-End, Traductora y Fotográfa, me apasiona estar en búsqueda continua de nuevos conocimientos.
-                  Me defino como una persona comunicativa,emprendedora y positiva, segura de que estamos rodeados de alternativas
-                  y oportunidades.</p>
-              </div>
-              <div class="col-12 col-sm-12 col-md-5 col-lg-5">
-                <img class="profileImage" src="assets/img/profilePicture.jpg" alt="">
-              </div>
+          <div class="row justify-content-center">
+            <div class="col-12 name">
+              <h1>Valentina N. Olivares</h1>
             </div>
           </div>
+          <div class="row justify-content-center">
+            <div class="col-12 name">
+              <h1 class="ml12">Frontend Developer</h1>
+            </div>
+          </div>
+        </div>
 
-          <!-- skills section-->
-          <section id="skillsP">
+        <!-- About me section -->
+        <div id="meP">
+          <div class="row">
+            <div class="col-12">
+              <h2 class="ml12 title">Sobre mi</h2>
+            </div>
+          </div>
+          <div class="row align-items-center justify-content-center clearfix aboutMe jumbotron">
+            <div class="col-12 col-sm-12 col-md-8 col-lg-8 meParragraph">
+              <p>Soy Desarrolladora Front-End, Traductora y Fotográfa, me apasiona estar en búsqueda continua de nuevos conocimientos.
+                Me defino como una persona comunicativa,emprendedora y positiva, segura de que estamos rodeados de alternativas
+                y oportunidades.</p>
+            </div>
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+              <img class="profileImage" src="assets/img/profilePicture.jpg" alt="">
+            </div>
+          </div>
+        </div>
+
+        <!-- skills section-->
+        <section id="skillsP">
+          <div class="row justify-content-center">
             <h2 class="ml12"> Habilidades</h2>
-
-            <div class="icons">
-
-              <div class="row justify-content-around">
-                <div class="col-2">
-                  <i class="devicon-html5-plain skillsIcon"></i>
-                  <p class="skillsTitle">HTML5</p>
-                </div>
-                <div class="col-2">
-                  <i class="devicon-javascript-plain skillsIcon"></i>
-                  <p class="skillsTitle">Javascript</p>
-                </div>
-                <div class="col-2">
-                  <i class="devicon-jquery-plain skillsIcon"></i>
-                  <p class="skillsTitle">JQuery</p>
-                </div>
-                <div class="col-2">
-                  <i class="devicon-react-original skillsIcon"></i>
-                  <p class="skillsTitle">React</p>
-                </div>
-              </div>
-
-              <div class="row justify-content-around">
-                <div class="col-2">
-                  <i class="devicon-ruby-plain skillsIcon"></i>
-                  <p class="skillsTitle">Ruby</p>
-                </div>
-                <div class="col-2">
-                  <i class="devicon-rails-plain skillsIcon"></i>
-                  <p class="skillsTitle">Rails</p>
-                </div>
-                <div class="col-2">
-                  <i class="devicon-git-plain skillsIcon"></i>
-                  <p class="skillsTitle">Git</p>
-                </div>
-                <div class="col-2">
-                  <i class="devicon-github-plain skillsIcon"></i>
-                  <p class="skillsTitle">Github</p>
-                </div>
-              </div>
-
-              <div class="row justify-content-around">
-                <div class="col-2">
-                  <i class="devicon-css3-plain skillsIcon"></i>
-                  <p class="skillsTitle">CSS3</p>
-                </div>
-                <div class="col-2">
-                  <i class="devicon-bootstrap-plain skillsIcon"></i>
-                  <p class="skillsTitle">Bootstrap</p>
-                </div>
-                <div class="col-2">
-                  <i class="devicon-photoshop-plain skillsIcon"></i>
-                  <p class="skillsTitle">Photoshop</p>
-                </div>
-                <div class="col-2">
-                  <i class="devicon-illustrator-plain skillsIcon"></i>
-                  <p class="skillsTitle">Illustrator</p>
-                </div>
-              </div>
-
-            </div>
-          </section>
-
-          <!--Contact Section-->
-          <div id="contactP">
-            <h2 class="ml12">Contact</h2>
-            
-
-              <div class="row align-items-center justify-content-center">
-
-                <div class="col-3">
-                  <a href="https://github.com/ValeOlivares">
-                    <i class="fa fa-github fa-4x"></i>
-                  </a>
-                </div>
-                <div class="col-3">
-                  <a href="https://www.linkedin.com/in/valentinaneira/">
-                    <i class="fa fa-linkedin fa-4x "></i>
-                  </a>
-                </div>
-                <div class="col-3">
-                  <a href="mailto:valentinaolivares85@gmail.com">
-                    <i class="fa fa-envelope fa-3x "></i>
-                  </a>
-                </div>
-              </div>
-
-              <div class="row align-items-center justify-content-center">
-                <div class="col-12">
-                  <a href="assets/docs/Valentina Neira Olivares.pdf" download class="fa fa-download fa-4x "></a>
-                </div>
-              </div>
-           
           </div>
 
-          <!--Work Section-->
-          <div id="workP">
-            <h2 class="ml12">Proyectos</h2>
 
-            <div id="carouselExampleIndicators" class="carousel slide carouselImg" data-ride="carousel">
-              <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-              </ol>
+          <div class=" jumbotron icons">
 
-              <div class="carousel-inner" role="listbox">
+            <div class="row justify-content-around">
+              <div class="col-2">
+                <i class="devicon-html5-plain skillsIcon"></i>
+                <p class="skillsTitle">HTML5</p>
+              </div>
+              <div class="col-2">
+                <i class="devicon-javascript-plain skillsIcon"></i>
+                <p class="skillsTitle">Javascript</p>
+              </div>
+              <div class="col-2">
+                <i class="devicon-jquery-plain skillsIcon"></i>
+                <p class="skillsTitle">JQuery</p>
+              </div>
+              <div class="col-2">
+                <i class="devicon-react-original skillsIcon"></i>
+                <p class="skillsTitle">React</p>
+              </div>
+            </div>
 
-                <div class="carousel-item active">
-                  <div>
+            <div class="row justify-content-around">
+              <div class="col-2">
+                <i class="devicon-ruby-plain skillsIcon"></i>
+                <p class="skillsTitle">Ruby</p>
+              </div>
+              <div class="col-2">
+                <i class="devicon-rails-plain skillsIcon"></i>
+                <p class="skillsTitle">Rails</p>
+              </div>
+              <div class="col-2">
+                <i class="devicon-git-plain skillsIcon"></i>
+                <p class="skillsTitle">Git</p>
+              </div>
+              <div class="col-2">
+                <i class="devicon-github-plain skillsIcon"></i>
+                <p class="skillsTitle">Github</p>
+              </div>
+            </div>
+
+            <div class="row justify-content-around">
+              <div class="col-2">
+                <i class="devicon-css3-plain skillsIcon"></i>
+                <p class="skillsTitle">CSS3</p>
+              </div>
+              <div class="col-2">
+                <i class="devicon-bootstrap-plain skillsIcon"></i>
+                <p class="skillsTitle">Bootstrap</p>
+              </div>
+              <div class="col-2">
+                <i class="devicon-photoshop-plain skillsIcon"></i>
+                <p class="skillsTitle">Photoshop</p>
+              </div>
+              <div class="col-2">
+                <i class="devicon-illustrator-plain skillsIcon"></i>
+                <p class="skillsTitle">Illustrator</p>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!--Contact Section-->
+        <div id="contactP">
+
+          <div class="row justify-content-center">
+            <h2 class="ml12">Contacto</h2>
+          </div>
+
+          <div class="contactDetails jumbotron">
+            <div class="row align-items-center justify-content-center">
+
+              <div class="col-3">
+                <a href="https://github.com/ValeOlivares" class="contactIcon" target="_blank">
+                  <i class="fa fa-github fa-4x"></i>
+                </a>
+              </div>
+              <div class="col-3">
+                <a href="https://www.linkedin.com/in/valentinaneira/" class="contactIcon" target="_blank">
+                  <i class="fa fa-linkedin fa-4x"></i>
+                </a>
+              </div>
+
+              <div class="col-3">
+                <a href="mailto:valentinaolivares85@gmail.com" class="contactIcon" target="_blank">
+                  <i class="fa fa-envelope fa-4x"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="row align-items-center justify-content-center">
+              <div class="col-12">
+                <a href="assets/docs/Valentina Neira Olivares.pdf" download class="fa fa-download fa-4x  pdf contactIcon"></a>
+                <p>Descargar CV</p>
+              </div>
+            </div>
+          </div>
 
 
-                    <figure class="effect-hera">
-                      <img class="d-block img-fluid" src="assets/img/foodmap.jpg" alt="Second slide">
-                      <figcaption>
-                        <h2>Foodmap</h2>
-                        <p>
-                          <a href="https://github.com/ValeOlivares/hackathon-movie" target="_blank">
-                            <i class="fa fa-code"></i>
-                          </a>
-                          <a href="https://github.com/ValeOlivares/hackathon-movie" target="_blank">Código</a>
-                          <a href="https://hackathon-movies.firebaseapp.com" target="_blank">
-                            <i class="fa fa-globe"></i>
-                          </a>
-                          <a href="https://hackathon-movies.firebaseapp.com" target="_blank">Web</a>
-                        </p>
-                      </figcaption>
-                    </figure>
-                  </div>
-                </div>
 
-                <div class="carousel-item">
+
+        </div>
+
+        <!--Work Section-->
+        <div id="workP">
+          <h2 class="ml12">Proyectos</h2>
+
+          <div id="carouselExampleIndicators" class="carousel slide carouselImg" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+
+            <div class="carousel-inner" role="listbox">
+
+              <div class="carousel-item active">
+                <div>
+
+
                   <figure class="effect-hera">
-                    <img class="d-block img-fluid" src="assets/img/Nominate.JPG" alt="Second slide">
+                    <img class="d-block img-fluid" src="assets/img/foodmap.jpg" alt="Second slide">
                     <figcaption>
-                      <h2>PROYECTO
-                        <span>Nominate</span>
-                      </h2>
-                      <p>
-                        <a href="https://github.com/ValeOlivares/hackathon-movie" target="_blank">
-                          <i class="fa fa-code"></i>
-                        </a>
-                        <a href="https://github.com/ValeOlivares/hackathon-movie" target="_blank">Código</a>
-                        <a href="https://hackathon-movies.firebaseapp.com" target="_blank">
-                          <i class="fa fa-globe"></i>
-                        </a>
-                        <a href="https://hackathon-movies.firebaseapp.com" target="_blank">Web</a>
-                      </p>
-                    </figcaption>
-                  </figure>
-
-
-                </div>
-                <div class="carousel-item">
-                  <figure class="effect-hera">
-                    <img class="d-block img-fluid" src="assets/img/twitter.jpg" alt="Second slide">
-                    <figcaption>
-                      <h2>Twitter</h2>
+                      <h2>Foodmap</h2>
                       <p>
                         <a href="https://github.com/ValeOlivares/hackathon-movie" target="_blank">
                           <i class="fa fa-code"></i>
@@ -278,19 +262,61 @@
                 </div>
               </div>
 
-              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
+              <div class="carousel-item">
+                <figure class="effect-hera">
+                  <img class="d-block img-fluid" src="assets/img/Nominate.JPG" alt="Second slide">
+                  <figcaption>
+                    <h2>PROYECTO
+                      <span>Nominate</span>
+                    </h2>
+                    <p>
+                      <a href="https://github.com/ValeOlivares/hackathon-movie" target="_blank">
+                        <i class="fa fa-code"></i>
+                      </a>
+                      <a href="https://github.com/ValeOlivares/hackathon-movie" target="_blank">Código</a>
+                      <a href="https://hackathon-movies.firebaseapp.com" target="_blank">
+                        <i class="fa fa-globe"></i>
+                      </a>
+                      <a href="https://hackathon-movies.firebaseapp.com" target="_blank">Web</a>
+                    </p>
+                  </figcaption>
+                </figure>
+
+
+              </div>
+              <div class="carousel-item">
+                <figure class="effect-hera">
+                  <img class="d-block img-fluid" src="assets/img/twitter.jpg" alt="Second slide">
+                  <figcaption>
+                    <h2>Twitter</h2>
+                    <p>
+                      <a href="https://github.com/ValeOlivares/hackathon-movie" target="_blank">
+                        <i class="fa fa-code"></i>
+                      </a>
+                      <a href="https://github.com/ValeOlivares/hackathon-movie" target="_blank">Código</a>
+                      <a href="https://hackathon-movies.firebaseapp.com" target="_blank">
+                        <i class="fa fa-globe"></i>
+                      </a>
+                      <a href="https://hackathon-movies.firebaseapp.com" target="_blank">Web</a>
+                    </p>
+                  </figcaption>
+                </figure>
+              </div>
             </div>
+
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
           </div>
         </div>
       </div>
     </div>
+  </div>
   </div>
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"

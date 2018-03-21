@@ -1,18 +1,34 @@
 /* ---- General---- */
-
 body {
     margin: 0 auto;
-    font-family: 'Roboto Condensed', sans-serif;
-  
-  }
-  li {
-    list-style: none;
+    font-family: 'Roboto Mono', monospace;
   }
 
-  .main {
-      height: 100vh;
+li {
+  list-style: none;
+  }
+
+.main {
+  height: 100vh;
+}
+
+  /* titles */
+  .ml12 {
+    font-weight: 200;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
   }
   
+  .ml12 .letter {
+    display: inline-block;
+    line-height: 1em;
+  }
+
+ /* ---- Home section---- */
+ 
+  
+
 
   /* ---- Skills section---- */
   .margin{
@@ -21,6 +37,7 @@ body {
   
   .icons{
     margin-top: 3em;
+    background-color: rgba(0, 0, 0, 0.5);
   }
   
   .skillsIcon {
@@ -45,23 +62,23 @@ body {
   /* ---- meP section---- */
   .aboutMe {
     margin-top: 5em;
+    background-color: rgba(0, 0, 0, 0.5);
   }
   
   .profileImage {
-    width: 20vw;
+    width: 17vw;
     border-radius: 50%;
   }
   
   .meParragraph {
-    margin-left: 1vw;
-    font-size: 1.5em;
+    text-align: justify;
+    font-size: 1.2em;
+    font-weight: 300;
   }
   
-  /* ---- sidenav section---- */
-  .sidenav {
-    height: 100vh;
-    max-width: 8vw;
-    background-color: rgba(0, 0, 0, 0.5);
+  /* ---- sidenav / navbar section---- */
+  .bg-primary {
+    background-color: rgba(0, 0, 0, 0.5) !important;
   }
   
   .icon {
@@ -88,12 +105,26 @@ body {
     color: #fff;
   }
   
-  .cv {
+  .pdf {
     padding-top: 2em;
   }
 
   .contactLink {
     font-size: 1.5em;
+  }
+
+  .contactDetails {
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 1em;
+  }
+  .contactIcon:link{
+    color:#fff;
+  }
+  .contactIcon:visited{
+    color: #fff;
+  }
+  .contactIcon:hover{
+    color:#fff;
   }
   
   /* ---- particle.js ---- */
@@ -162,6 +193,7 @@ body {
       stroke-dashoffset:0;
     }
   }
+
   /* ----  svg animation end---- */
   .tabs {
     text-align: center;
@@ -209,16 +241,6 @@ body {
   }
   
   
-  /* titles */
-  .ml12 {
-    font-weight: 200;
-    font-size: 2em;
-    text-transform: uppercase;
-    letter-spacing: 1em;
-  }
+
   
-  .ml12 .letter {
-    display: inline-block;
-    line-height: 1em;
-  }
   
