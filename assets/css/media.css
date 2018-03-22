@@ -1,6 +1,14 @@
-@media only screen and (max-width : 768px){
-	.ml12{
-        font-size: 19px;
+@media (min-width: 768px) {
+  .adjustContent {
+    min-height: 100vh;
+    min-width: 18rem;
+  }
+}
+
+
+@media  (max-width : 768px){
+	.dev{
+        font-size: 0.8rem;
         margin-left: 0.5em;
     }
     .profileImage {
@@ -10,6 +18,27 @@
     .skillsIcon {
         font-size: 2em;
       }
+    
+      .adjustContent {
+        margin-left: 1rem;
+      }
+    
+      .meParragraph {
+        font-size: 0.8em;
+      }
+      
+      .title {
+        font-size: 1em;
+      }
+
+      .aboutMe {
+        margin-top: 2em;
+      }
+
+      .iconRow {
+        margin-top: 2em;
+      }
+    
 	
 }
 
@@ -51,17 +80,19 @@
     #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
       display: block;
     }
-  }
-  @media (min-width: 768px) {
     .adjustContent {
-      min-height: 100vh;
-      min-width: 18rem;
+      padding-top: 3rem;
+      padding-bottom: 3rem;
     }
   }
-  
-  @media (min-width: 992px) {
+
+  @media (max-width: 992px) {
     .adjustContent {
-      padding-top: 3rem !important;
-      padding-bottom: 3rem !important;
+      border-left: 0rem;
+    }
+  }
+  @media (max-width: 576px) {
+    .adjustContent {
+      border-left: 0rem;
     }
   }
