@@ -377,3 +377,8 @@ li {
   max-height: 250px;
   overflow:hidden;
 }
+
+.lead {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
