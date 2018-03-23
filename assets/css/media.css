@@ -2,6 +2,7 @@
   .adjustContent {
     min-height: 100vh;
     min-width: 18rem;
+    padding-bottom: 0rem;
   }
 }
 
