@@ -382,3 +382,7 @@ li {
   margin-top: 2em;
   margin-bottom: 2em;
 }
+
+.center {
+  text-align: center;
+}
