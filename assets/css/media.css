@@ -2,8 +2,8 @@
   .adjustContent {
     min-height: 100vh;
     min-width: 18rem;
-  
   }
+  
 }
 
 
@@ -39,7 +39,12 @@
       .iconRow {
         margin-top: 2em;
       }
-    
+
+      .icon {
+        margin-top: 0.4em;
+        padding: 0.5em;
+      
+      }
 	
 }
 
@@ -92,8 +97,15 @@
       border-left: 0rem;
     }
   }
+
+
   @media (max-width: 576px) {
     .adjustContent {
       border-left: 0rem;
+    }
+    .icon {
+      margin-top: 0.5vh;
+      padding: 0.5em;
+    
     }
   }
