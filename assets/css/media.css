@@ -7,13 +7,10 @@
   
 }
 
-
 @media  (max-width : 768px){
-
     .profileImage {
         width: 50vw;
     }
-
     .skillsIcon {
         font-size: 2em;
       }
@@ -107,6 +104,29 @@
     .icon {
       margin-top: 0.5vh;
       padding: 0.5em;
-    
     }
+
+    .profileImage {
+      width: 50vw;
+  }
+  .skillsIcon {
+      font-size: 2em;
+    }
+  
+    .meParragraph {
+      font-size: 0.5em;
+    }
+    
+    .title {
+      font-size: 0.5em;
+    }
+
+    .aboutMe {
+      margin-top: 1.5em;
+    }
+
+    .iconRow {
+      margin-top: 1em;
+    }
+
   }
