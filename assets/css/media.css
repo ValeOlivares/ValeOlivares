@@ -131,4 +131,16 @@
     .name {
       font-size: 1em;
     }
+
+    .jumbotron {
+      padding: 0.8rem 0.8rem;
+      margin-bottom: 1rem;
+    }
+    
+    .contactIcon {
+      font-size: 0.5em;
+    }
+    .pdf {
+      padding-top: 1em;
+    }
   }
