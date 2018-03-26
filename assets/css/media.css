@@ -109,7 +109,7 @@
     .profileImage {
       width: 50vw;
   }
-  .skillsIcon {
+    .skillsIcon {
       font-size: 2em;
     }
   
@@ -118,7 +118,7 @@
     }
     
     .title {
-      font-size: 0.5em;
+      font-size: 0.8em;
     }
 
     .aboutMe {
@@ -128,5 +128,7 @@
     .iconRow {
       margin-top: 1em;
     }
-
+    .name {
+      font-size: 1em;
+    }
   }
