@@ -41,6 +41,9 @@
         padding: 0.5em;
       
       }
+      .carousel {
+        max-width:90vw;
+      }
 	
 }
 
